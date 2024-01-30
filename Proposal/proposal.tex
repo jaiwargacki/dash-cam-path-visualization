@@ -1,0 +1,82 @@
+\documentclass{article}
+
+% 1 inch margins
+\usepackage[margin=1in]{geometry}
+
+% Link
+\usepackage{hyperref}
+
+% Prevent paragraph indentation
+\usepackage{parskip}
+
+% Page header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Jai Wargacki}
+\rhead{CSCI-711-01 Global Illumination\\ Project Proposal}
+
+\begin{document}
+% Title -- A short (ideally) but catchy name for your project; essentially, a summary of what you're doing in a few words.
+\textbf{Title:} Dash Cam Path Visualization
+
+% Name(s) -- Your name (if you are working alone), or a list of the names of the members of the team (if working as a team) with an indication of who is the team leader.
+\textbf{Name:} Jai Wargacki
+
+% Class name and number -- CSCI-711, Global Illumination.
+\textbf{Class:} CSCI-711, Global Illumination
+
+% Project web site URL -- This is where you'll post all your project-related material (including your proposal).
+\textbf{Project URL:} \url{https://cs.rit.edu/~jpw5681/cs711/Website/}
+
+% Summary of the project -- A description of the 3D scene that is to be constructed, the aspect of the rendering pipeline that will be emphasized, and the means by which you plan on doing so.
+\textbf{Summary:} The goal of this project is to create a visualization of a recorded dash cam path on a 3D map.
+Additionally, when the user mouses over the path, a thumbnail of the video at that point will be displayed for the user to view.
+This project will emphasize interactivity. The user is able to move the camera around the scene to view the path from different angles
+as well as hover the mouse over the path to view the video at that point. This project will be accomplished by adding additional 3D elements to 
+webGL elements provided by the Google Maps API. It is currently unclear what will be needed additionally to plot a smooth path on the map, and
+display the video thumbnails over the route.
+
+% Project objectives -- What are you trying to accomplish by working on this project?
+\textbf{Objectives:} My motivation for this project is to create a visualization that can be integrated with my capstone project which 
+is a dash cam video management software.
+
+% System and software -- The computer hardware and software that you are planning to use to implement this project.
+\textbf{System and Software:} This project will be implemented using webGL and make use of the Google Maps API for mapping. 
+The project will be written in JavaScript and HTML and run in a web browser.
+The project will be hosted at the same URL as listed above.
+
+% Project components -- A breakdown of the pieces (e.g., a GUI, ray tracer modifications, etc.) of the project, with as many details as possible.
+\textbf{Components:} The currently the only planned component of this project is the visualization itself which is a GUI. A possible other 
+component for this project would be a data loader, depending on the expected/needed format of the data.
+
+% Project responsibilities -- A detailed list of tasks (and who will do them, if a group project).
+\textbf{Project Tasks:}
+\begin{itemize}
+    \item Loading 3D map
+    \item Loading dash cam path
+    \item Displaying correct portion of map based on path
+    \item Displaying path on map
+    \item Displaying video thumbnails on path on mouse over
+\end{itemize}
+
+% Project timeline -- A list of milestones (e.g., initial design, skeletal prototype, first running code, etc.) along with an estimate of when you expect to achieve each one. 
+% (Dates here will, obviously, be estimates; they're not cast in stone, but rather in sand, as they will very likely slip during your work.)
+\textbf{Project Timeline:}
+\begin{itemize}
+    \item Week 4: Setting up project, loading 3D map
+    \item Week 5: Loading dash cam data
+    \item Week 6: Creating path from dash cam data (not yet displayed on map)
+    \item Week 7: Displaying correct portion of map based on path coordinates
+    \item Week 8: Displaying path on map
+    \item Week 9: Displaying path on map (cont.)
+    \item Week 10: Displaying video thumbnails on path on mouse over
+    \item Week 11: Displaying video thumbnails on path on mouse over (cont.)
+    \item Week 12: Improvements to UI and user experience
+    \item Week 13: Improvements to UI and user experience (cont.)
+    \item Week 14: Finishing touches
+\end{itemize}
+
+% Final presentation -- An indication of how you plan to demonstrate or present the project during the project presentation sessiojn at the end of the term.
+\textbf{Final Presentation:} The project will be demonstrated by demoing the visualization on a variety of dash cam routes.
+
+\end{document}
